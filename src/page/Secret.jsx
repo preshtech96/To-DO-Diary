@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Secret = () => {
   const navigate = useNavigate();
@@ -86,10 +87,13 @@ const Secret = () => {
           Access Dashboard
         </button>
         <p className="mt-4">
-          Can't receive code ?{" "}
-          <a href="/Register" className="text-blue-600 font-bold hover:text-orange-500">
+          No Secret Pin ?{" "}
+          <Link
+            to="/Register"
+            className="text-blue-600 font-bold hover:text-orange-500"
+          >
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
       
@@ -98,3 +102,4 @@ const Secret = () => {
 };
 
 export default Secret;
+
