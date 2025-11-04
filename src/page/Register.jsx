@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Footer from "../components/Footer";
+import {Link} from "react-router-dom";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -158,9 +159,12 @@ const Register = () => {
 
         <p className="mt-4">
           Already have an account?{" "}
-          <a href="/" className="text-blue-600 font-bold hover:text-orange-500">
+          <Link
+            to="/"
+            className="text-blue-600 font-bold hover:text-orange-500"
+          >
             Log in
-          </a>
+          </Link>
         </p>
       </div>
 
@@ -172,3 +176,4 @@ const Register = () => {
 };
 
 export default Register;
+
