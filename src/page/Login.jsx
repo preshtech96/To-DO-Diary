@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
+import {Link} from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -91,12 +92,12 @@ const Login = () => {
 
         <p className="mt-4">
           Don't have an account?{" "}
-          <a
-            href="/Register"
+          <Link
+            to="/Register"
             className="text-blue-600 font-bold hover:text-orange-500"
           >
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
 
@@ -108,3 +109,4 @@ const Login = () => {
 };
 
 export default Login;
+
